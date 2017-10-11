@@ -31,6 +31,9 @@ canvas.big {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  @media screen and (max-width:900px) {
+    max-width: 95vw;
+  }
 }
 
 p, ul{
@@ -38,13 +41,15 @@ p, ul{
 }
 
 img {
-  width: 600px;
+  width: 100%;
+  max-width:600px;
   margin: 0 auto;
 }
 
 table{
   margin:0 auto;
-  width:600px;
+  max-width:100%;
+  overflow:scroll;
 }
 
 table, tr, td {
