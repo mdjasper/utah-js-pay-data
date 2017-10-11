@@ -31,7 +31,10 @@ canvas.big {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  @media screen and (max-width:900px) {
+}
+
+@media screen and (max-width:900px) {
+  .page{
     max-width: 95vw;
   }
 }
@@ -50,6 +53,7 @@ table{
   margin:0 auto;
   max-width:100%;
   overflow:scroll;
+  font-size:0.9em;
 }
 
 table, tr, td {
@@ -58,7 +62,7 @@ table, tr, td {
 
 footer {
   margin-top:2em;
-  font-size:1em;
+  font-size:0.8em;
   background:#eaeaea;
   color:#333;
   padding:1em;
