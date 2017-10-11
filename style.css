@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  font-size: 1.2em;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+  border-bottom:1px solid #eaeaea;
+}
+
+h2{
+  background: #444;
+  color:#fff;
+}
+
+canvas{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+canvas.big {
+  max-width: 800px;
+}
+.page{
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p, ul{
+  text-align: left;
+}
+
+img {
+  width: 600px;
+  margin: 0 auto;
+}
+
+table{
+  margin:0 auto;
+  width:600px;
+}
+
+table, tr, td {
+  border:1px solid #aaa;
+}
+
+footer {
+  margin-top:2em;
+  font-size:1em;
+  background:#eaeaea;
+  color:#333;
+  padding:1em;
+  text-align: left;
+}
+
+.commentary{
+  background: #eaeaea;
+  padding: 1em;
+  font-style: italic;
+  font-size:0.9em;
+}
