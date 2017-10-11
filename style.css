@@ -70,6 +70,7 @@ footer {
 }
 
 .commentary{
+  margin:1em 0;
   background: #eaeaea;
   padding: 1em;
   font-style: italic;
