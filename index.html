@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="eng">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6431083-24"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-6431083-24');
+        </script>
+
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Utah JS 2017 pay Survey</title>
@@ -18,7 +28,7 @@
         
         <h2>Demographics</h2>
 
-        <p>64 people responeded to the survey. They described themeselves in the following ways:</p>
+        <p>69 people responeded to the survey. They described themeselves in the following ways:</p>
 
         <h3>Self Reported Job Titles</h3>
         <canvas id="respondent-labels-bar"></canvas>
@@ -30,7 +40,7 @@
                 labels: ["Junior", "Mid-level", "Senior", "Other"],
                 datasets: [{
                     label: 'Job Title',
-                    data: [12, 15, 16, 8],
+                    data: [14, 26, 21, 8],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -79,7 +89,7 @@
                 labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,17,18],
                 datasets: [{
                     label: 'Years of Experience',
-                    data: [9,7,6,5,5,1,3,2,3,1,2,2,3,1,1,1],
+                    data: [9,11,10,7,7,1,3,4,3,2,2,3,3,1,1,2],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -131,7 +141,7 @@
               labels: ["Bootcamp", "Self Taught", "Traditional University"],
               datasets: [{
                   label: 'Type of Education',
-                  data: [17, 17, 25],
+                  data: [19, 21, 29],
                   backgroundColor: [
                       'rgba(255, 99, 132, 0.2)',
                       'rgba(54, 162, 235, 0.2)',
@@ -191,66 +201,74 @@
                     'rgba(54, 162, 235, 0.6)',
                   ],
                 data: [{x:1, y:58000},
-                  {x:2.75, y:103000},
-                  {x:1, y:35000},
-                  {x:7, y:126000},
-                  {x:3, y:75000},
-                  {x:9, y:125000},
-                  {x:9, y:150000},
-                  {x:4, y:80000},
-                  {x:2, y:85000},
-                  {x:7, y:140000},
-                  {x:2, y:75000},
-                  {x:11, y:125000},
-                  {x:0.5, y:60000},
-                  {x:1, y:37000},
-                  {x:4, y:82000},
-                  {x:3, y:35000},
-                  {x:2, y:55000},
-                  {x:4.5, y:80000},
-                  {x:4, y:85000},
-                  {x:2, y:55000},
-                  {x:5, y:100000},
-                  {x:12, y:125000},
-                  {x:8, y:120000},
-                  {x:6, y:115000},
-                  {x:3, y:85000},
-                  {x:17, y:120000},
-                  {x:1.5, y:70000},
-                  {x:2, y:60000},
-                  {x:5, y:95000},
-                  {x:1, y:50000},
-                  {x:18, y:90000},
-                  {x:4, y:82000},
-                  {x:1, y:50000},
-                  {x:3, y:70000},
-                  {x:3, y:87000},
-                  {x:13, y:90000},
-                  {x:1.5, y:63000},
-                  {x:12, y:87000},
-                  {x:4, y:80000},
-                  {x:5, y:115000},
-                  {x:1, y:58000},
-                  {x:9, y:175000},
-                  {x:1, y:47500},
-                  {x:1, y:50000},
-                  {x:13, y:87500},
-                  {x:8, y:100000},
-                  {x:13, y:145000},
-                  {x:5, y:160000},
-                  {x:14, y:125000},
-                  {x:7, y:99000},
-                  {x:10, y:140000},
-                  {x:11, y:135000},
-                  {x:2, y:42000},
-                  {x:3, y:95000},
-                  {x:2, y:45000},
-                  {x:12, y:120000},
-                  {x:8, y:95000},
-                  {x:10, y:110000},
-                  {x:2, y:80000},
-                  {x:5, y:110000},
-                  {x:4, y:54000}
+                {x:2.75, y:103000},
+                {x:1, y:35000},
+                {x:7, y:126000},
+                {x:3, y:75000},
+                {x:9, y:125000},
+                {x:9, y:150000},
+                {x:4, y:80000},
+                {x:2, y:85000},
+                {x:7, y:140000},
+                {x:2, y:75000},
+                {x:11, y:125000},
+                {x:0.5, y:60000},
+                {x:1, y:37000},
+                {x:4, y:82000},
+                {x:3, y:35000},
+                {x:2, y:55000},
+                {x:4.5, y:80000},
+                {x:4, y:85000},
+                {x:2, y:55000},
+                {x:5, y:100000},
+                {x:12, y:125000},
+                {x:8, y:120000},
+                {x:6, y:115000},
+                {x:3, y:85000},
+                {x:17, y:120000},
+                {x:1.5, y:70000},
+                {x:2, y:60000},
+                {x:5, y:95000},
+                {x:1, y:50000},
+                {x:18, y:90000},
+                {x:4, y:82000},
+                {x:1, y:50000},
+                {x:3, y:70000},
+                {x:3, y:87000},
+                {x:13, y:90000},
+                {x:1.5, y:63000},
+                {x:12, y:87000},
+                {x:4, y:80000},
+                {x:5, y:115000},
+                {x:1, y:58000},
+                {x:9, y:175000},
+                {x:1, y:47500},
+                {x:1, y:50000},
+                {x:13, y:87500},
+                {x:8, y:100000},
+                {x:13, y:145000},
+                {x:5, y:160000},
+                {x:14, y:125000},
+                {x:7, y:99000},
+                {x:10, y:140000},
+                {x:11, y:135000},
+                {x:2, y:42000},
+                {x:3, y:95000},
+                {x:2, y:45000},
+                {x:12, y:120000},
+                {x:8, y:95000},
+                {x:10, y:110000},
+                {x:2, y:80000},
+                {x:5, y:110000},
+                {x:4, y:54000},
+                {x:2.5, y:95000},
+                {x:4, y:70000},
+                {x:3, y:90000},
+                {x:3, y:55000},
+                {x:18, y:160000},
+                {x:8, y:105000},
+                {x:5, y:60000},
+                {x:2, y:74000}
                 ]
             }]
         },
@@ -276,6 +294,11 @@
         }
     });
       </script>
+
+<div class="commentary">
+    <h4>Commentary</h4>
+      <p>There is a period of rapid salary growth in the first 6-8 years of a career, then the incomes level off around an average of $120k. Others have suggested, and I agree, that the key to maximizing earning potential is to enter the market with a fair salary, centered around $60k, taking advantage of minor advancedments or raises, then make career/employer moves to increase your pay in larger leaps ($60k → $90k → $120k) every couple years. If a developer entered the market at below-average range, say in the $40k's, then stayed with the same company only recieveing yearly increases or percentage-capped raises, they may find themselves stuck around $70-$80k many years later.</p>
+  </div>
 
       <h3>Salary By Education</h3>
 
@@ -311,24 +334,25 @@
                 backgroundColor: [
                 'rgba(255, 99, 132, 1)',
                   ],
-                data: [{x:1, y:58000},
-                {x:1, y:35000},
-                {x:2, y:85000},
-                {x:0.5, y:60000},
-                {x:1, y:37000},
-                {x:4.5, y:80000},
-                {x:3, y:85000},
-                {x:1.5, y:70000},
-                {x:1, y:50000},
-                {x:3, y:70000},
-                {x:1, y:58000},
-                {x:1, y:47500},
-                {x:1, y:50000},
-                {x:2, y:42000},
-                {x:3, y:95000},
-                {x:2, y:45000},
-                {x:2, y:80000},
-                {x:2.5, y:95000}
+                data: [{x:1,y:58000},
+                {x:1,y:35000},
+                {x:2,y:85000},
+                {x:0.5,y:60000},
+                {x:1,y:37000},
+                {x:4.5,y:80000},
+                {x:3,y:85000},
+                {x:1.5,y:70000},
+                {x:1,y:50000},
+                {x:3,y:70000},
+                {x:1,y:58000},
+                {x:1,y:47500},
+                {x:1,y:50000},
+                {x:2,y:42000},
+                {x:3,y:95000},
+                {x:2,y:45000},
+                {x:2,y:80000},
+                {x:2.5,y:95000},
+                {x:2,y:74000}
                 ]
             },
             {
@@ -337,23 +361,26 @@
                 'rgba(54, 162, 235, 1)',
                   ],
                 data: [{x:9, y:150000},
-                  {x:4, y:80000},
-                  {x:3, y:35000},
-                  {x:2, y:55000},
-                  {x:4, y:85000},
-                  {x:12, y:125000},
-                  {x:8, y:120000},
-                  {x:17, y:120000},
-                  {x:2, y:60000},
-                  {x:18, y:90000},
-                  {x:1, y:50000},
-                  {x:3, y:87000},
-                  {x:13, y:90000},
-                  {x:1.5, y:63000},
-                  {x:12, y:87000},
-                  {x:4, y:80000},
-                  {x:8, y:100000},
-                  {x:4, y:54000}
+                {x:4, y:80000},
+                {x:3, y:35000},
+                {x:2, y:55000},
+                {x:4, y:85000},
+                {x:12, y:125000},
+                {x:8, y:120000},
+                {x:17, y:120000},
+                {x:2, y:60000},
+                {x:18, y:90000},
+                {x:1, y:50000},
+                {x:3, y:87000},
+                {x:13, y:90000},
+                {x:1.5, y:63000},
+                {x:12, y:87000},
+                {x:4, y:80000},
+                {x:8, y:100000},
+                {x:4, y:54000},
+                {x:3, y:55000},
+                {x:8, y:105000},
+                {x:5, y:60000}
                 ]
             },
             {
@@ -362,33 +389,34 @@
                 'rgba(255, 206, 86, 1)',
                   ],
                 data: [{x:2.75, y:103000},
-                  {x:7, y:126000},
-                  {x:3, y:75000},
-                  {x:9, y:125000},
-                  {x:7, y:140000},
-                  {x:2, y:75000},
-                  {x:11, y:125000},
-                  {x:4, y:82000},
-                  {x:2, y:55000},
-                  {x:5, y:100000},
-                  {x:6, y:115000},
-                  {x:5, y:95000},
-                  {x:4, y:82000},
-                  {x:5, y:115000},
-                  {x:9, y:175000},
-                  {x:13, y:87500},
-                  {x:13, y:145000},
-                  {x:5, y:160000},
-                  {x:14, y:125000},
-                  {x:7, y:99000},
-                  {x:10, y:140000},
-                  {x:11, y:135000},
-                  {x:12, y:120000},
-                  {x:8, y:95000},
-                  {x:10, y:110000},
-                  {x:5, y:110000},
-                  {x:4, y:70000},
-                  {x:3, y:90000},
+                {x:7, y:126000},
+                {x:3, y:75000},
+                {x:9, y:125000},
+                {x:7, y:140000},
+                {x:2, y:75000},
+                {x:11, y:125000},
+                {x:4, y:82000},
+                {x:2, y:55000},
+                {x:5, y:100000},
+                {x:6, y:115000},
+                {x:5, y:95000},
+                {x:4, y:82000},
+                {x:5, y:115000},
+                {x:9, y:175000},
+                {x:13, y:87500},
+                {x:13, y:145000},
+                {x:5, y:160000},
+                {x:14, y:125000},
+                {x:7, y:99000},
+                {x:10, y:140000},
+                {x:11, y:135000},
+                {x:12, y:120000},
+                {x:8, y:95000},
+                {x:10, y:110000},
+                {x:5, y:110000},
+                {x:4, y:70000},
+                {x:3, y:90000},
+                {x:18, y:160000}
                 ]
             }]
         },
@@ -418,10 +446,9 @@
       <div class="commentary">
         <h4>Commentary</h4>
           <ul>
-            <li>Inexperienced self-taught and bootcamp graduates are the lowest earners, starting between 35-60k</li>
+            <li>Less experienced self-taught and bootcamp graduates are the lowest earners, starting between 35-60k</li>
             <li>No Bootcamp graduate who answered the survey earns &gt;$100k</li>
             <li>Traditional university graduates on average earn higher than their peers at all experience levels</li>
-            <li>The earnings sweetspot of respondents is between 6-12 years experience with between $120-140k salary</li>
           </ul>
       </div>
 
@@ -443,6 +470,44 @@
         </ul>
       </div>
 
+      <h3>Salary by Location</h3>
+
+      <canvas id="salary-by-location" class="big-chart"></canvas>
+      <script>
+      var ctx = document.getElementById("salary-by-location");
+      var myChart = new Chart(ctx, {
+          type: 'horizontalBar',
+          data: {
+              labels: ["Centerville (1)","Springville (1)","West Jordan (1)","Logan (2)","Draper (1)","Orem (8)","Provo (5)","Hayden, ID (1)","Utah (1)","Salt Lake City (17)","Ogden (1)","Beaverton (1)","Pleasant Grove (1)","St. George (1)","Lehi (19)","Farmington (1)","South Jordan (2)","Riverton  (1)","Highland (2)","Remote (1)","American Fork (1)"],
+              datasets: [{
+                  label: 'Type of Education',
+                  data: [37000,42000,47500,55000,70000,70750,78600,80000,82000,89676,90000,95000,95000,95000,97263,105000,106000,115000,137500,145000,175000],
+                  backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                  borderWidth: 0
+              }]
+          },
+          options: {
+              scales: {
+                yAxes: [{
+                  ticks: {
+                      beginAtZero:true
+                  },
+                  scaleLabel: {
+                    display: true,
+                    labelString: 'Cities with Respondent Count'
+                  }
+              }],
+              }
+          }
+      });
+      </script>
+
+<div class="commentary">
+    <h4>Commentary</h4>
+    <p>Salary by City is an interesting chart, but some cities have few (or only 1) responses, making the data for them less reliable. Some have many, like Lehi and Salt Lake City, which make their averages more reliable.</p>
+  </div>
+
+
       <h2>Comparison to similar 2016 survey</h2>
 
       <canvas id="2016-2017" class="big"></canvas>
@@ -457,66 +522,74 @@
                     'rgba(54, 162, 235, 1)',
                   ],
                 data: [{x:1, y:58000},
-                  {x:2.75, y:103000},
-                  {x:1, y:35000},
-                  {x:7, y:126000},
-                  {x:3, y:75000},
-                  {x:9, y:125000},
-                  {x:9, y:150000},
-                  {x:4, y:80000},
-                  {x:2, y:85000},
-                  {x:7, y:140000},
-                  {x:2, y:75000},
-                  {x:11, y:125000},
-                  {x:0.5, y:60000},
-                  {x:1, y:37000},
-                  {x:4, y:82000},
-                  {x:3, y:35000},
-                  {x:2, y:55000},
-                  {x:4.5, y:80000},
-                  {x:4, y:85000},
-                  {x:2, y:55000},
-                  {x:5, y:100000},
-                  {x:12, y:125000},
-                  {x:8, y:120000},
-                  {x:6, y:115000},
-                  {x:3, y:85000},
-                  {x:17, y:120000},
-                  {x:1.5, y:70000},
-                  {x:2, y:60000},
-                  {x:5, y:95000},
-                  {x:1, y:50000},
-                  {x:18, y:90000},
-                  {x:4, y:82000},
-                  {x:1, y:50000},
-                  {x:3, y:70000},
-                  {x:3, y:87000},
-                  {x:13, y:90000},
-                  {x:1.5, y:63000},
-                  {x:12, y:87000},
-                  {x:4, y:80000},
-                  {x:5, y:115000},
-                  {x:1, y:58000},
-                  {x:9, y:175000},
-                  {x:1, y:47500},
-                  {x:1, y:50000},
-                  {x:13, y:87500},
-                  {x:8, y:100000},
-                  {x:13, y:145000},
-                  {x:5, y:160000},
-                  {x:14, y:125000},
-                  {x:7, y:99000},
-                  {x:10, y:140000},
-                  {x:11, y:135000},
-                  {x:2, y:42000},
-                  {x:3, y:95000},
-                  {x:2, y:45000},
-                  {x:12, y:120000},
-                  {x:8, y:95000},
-                  {x:10, y:110000},
-                  {x:2, y:80000},
-                  {x:5, y:110000},
-                  {x:4, y:54000}
+                {x:2.75, y:103000},
+                {x:1, y:35000},
+                {x:7, y:126000},
+                {x:3, y:75000},
+                {x:9, y:125000},
+                {x:9, y:150000},
+                {x:4, y:80000},
+                {x:2, y:85000},
+                {x:7, y:140000},
+                {x:2, y:75000},
+                {x:11, y:125000},
+                {x:0.5, y:60000},
+                {x:1, y:37000},
+                {x:4, y:82000},
+                {x:3, y:35000},
+                {x:2, y:55000},
+                {x:4.5, y:80000},
+                {x:4, y:85000},
+                {x:2, y:55000},
+                {x:5, y:100000},
+                {x:12, y:125000},
+                {x:8, y:120000},
+                {x:6, y:115000},
+                {x:3, y:85000},
+                {x:17, y:120000},
+                {x:1.5, y:70000},
+                {x:2, y:60000},
+                {x:5, y:95000},
+                {x:1, y:50000},
+                {x:18, y:90000},
+                {x:4, y:82000},
+                {x:1, y:50000},
+                {x:3, y:70000},
+                {x:3, y:87000},
+                {x:13, y:90000},
+                {x:1.5, y:63000},
+                {x:12, y:87000},
+                {x:4, y:80000},
+                {x:5, y:115000},
+                {x:1, y:58000},
+                {x:9, y:175000},
+                {x:1, y:47500},
+                {x:1, y:50000},
+                {x:13, y:87500},
+                {x:8, y:100000},
+                {x:13, y:145000},
+                {x:5, y:160000},
+                {x:14, y:125000},
+                {x:7, y:99000},
+                {x:10, y:140000},
+                {x:11, y:135000},
+                {x:2, y:42000},
+                {x:3, y:95000},
+                {x:2, y:45000},
+                {x:12, y:120000},
+                {x:8, y:95000},
+                {x:10, y:110000},
+                {x:2, y:80000},
+                {x:5, y:110000},
+                {x:4, y:54000},
+                {x:2.5, y:95000},
+                {x:4, y:70000},
+                {x:3, y:90000},
+                {x:3, y:55000},
+                {x:18, y:160000},
+                {x:8, y:105000},
+                {x:5, y:60000},
+                {x:2, y:74000}
                 ]
             },
             {
@@ -600,16 +673,18 @@
 
     <div class="commentary">
         <h4>Commentary</h4>
-        <p>It's interesting that all 2017 1-year developers earn less then their 2016 couterparts, while at the same time the highest salaries in the 7+ are all 2017 salaries. There is a well reported need for more developers in Utah -- but is it possible that the influx of bootcamp graduates has actually depressed the wages in the lowest-exerience categories, while higher experience employees wages are rising?</p>
+        <p>It's interesting that all 2017 1-year developers earn less then their 2016 couterparts, while at the same time the highest salaries in the 7+ years of experience are mostly 2017 salaries. There is a well reported need for more developers in Utah -- but is it possible that the influx of bootcamp graduates has actually depressed the wages in the lowest-exerience categories, while higher experience employees wages are rising?</p>
     </div>
 
     <div class="commentary">
         <h4>Commentary</h4>
-        <p>While interpreting this data, please remember that pay, experience, and education are all highly individual and can vary by company, location, and individual skill.</p>
+        <p>While interpreting this data, please remember that there are other variables, such as company, industry, and (perhaps most important) individual skill, which were not measured by this survey and can have a large impact on pay and job title.</p>
     </div>
       
 
       <h2>Comments</h2>
+
+      <p>What was most interesting to you? What other insights might there be? Please dicuss:</p>
 
       <script id="dsq-count-scr" src="//mvp-2.disqus.com/count.js" async></script>
       <script>
@@ -650,9 +725,5 @@ s.setAttribute('data-timestamp', +new Date());
     <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
   </footer>
         </div>
-        
-        <script src="script.js"></script>
-
-        <!-- TODO analytics-->
     </body>
 </html>
